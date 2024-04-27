@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lanking News</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family: "Pretendard-Regular";
+        src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+          format("woff");
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      body {
+        background-color: #f5f5f5;
+        font-family: "Pretendard-Regular";
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 타이틀 -->
+    <div
+      class="col-lg-12 p-2 bg-white"
+      style="text-align: center; vertical-align: middle"
+    >
+      <img
+        src="https://zootopic-s3.s3.ap-northeast-2.amazonaws.com/zoo_doubutsuen_sizeup.png"
+        alt="zoo"
+        style="height: 100px"
+      />
+      <span style="font-size: 70px; font-weight: 900; color: #d00d17">
+        Topic
+      </span>
+    </div>
+    <div class="container-fluid">
+      <div class="col-lg-12 py-4 text-center">
+        <h2 class="m-0" style="font-weight: 700">
+          오늘의 랭킹 뉴스를 확인해보세요!
+        </h2>
+      </div>
+    </div>
+
+    <!--뉴스 컨테이너-->
+    <div class="container-fluid">
+      <div class="row p-5" id="album">
+        <div class="pt-3">
+          <strong>금주의 핫토픽 12!</strong>
+        </div>
+        <hr class="featurette-divider" />
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3"
+        >
+          <div class="col">
+            <div class="card shadow-sm" style="height: 350px">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c" />
+              <a href="https://n.news.naver.com/mnews/article/001/0014531279">
+                <img
+                  class="img-fluid"
+                  style="height: 200px; display: block; margin: auto"
+                  src="https://imgnews.pstatic.net/image/001/2024/02/27/PCM20240227000121990_P4_20240227174414164.jpg?type=w647"
+                  alt="기사 사진"
+                />
+              </a>
+              <div class="card-body">
+                <a
+                  href="https://n.news.naver.com/mnews/article/001/0014531279"
+                  style="text-decoration: none; color: black"
+                >
+                  <p class="card-text">
+                    尹 "의대증원 2천명 최소 필수조치…협상이나 타협 대상
+                    아냐"(종합2보)
+                  </p>
+                </a>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-2"
+                >
+                  <small class="text-body-secondary">연합뉴스</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm" style="height: 350px">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c" />
+              <a href="https://n.news.naver.com/mnews/article/009/0005264752">
+                <img
+                  class="img-fluid"
+                  style="height: 200px; display: block; margin: auto"
+                  src="https://imgnews.pstatic.net/image/009/2024/02/27/0005264752_001_20240227203500997.jpg?type=w647"
+                  alt="기사 사진"
+                />
+              </a>
+              <div class="card-body">
+                <a
+                  href="https://n.news.naver.com/mnews/article/009/0005264752"
+                  style="text-decoration: none; color: black"
+                >
+                  <p class="card-text">
+                    591만원 vs 286만원···다들 “대기업, 대기업” 하는데 이런 자리
+                    14%뿐
+                  </p>
+                </a>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-2"
+                >
+                  <small class="text-body-secondary">매일경제</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm" style="height: 350px">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c" />
+              <a href="https://n.news.naver.com/mnews/article/015/0004953566">
+                <img
+                  class="img-fluid"
+                  style="height: 200px; display: block; margin: auto"
+                  src="https://imgnews.pstatic.net/image/015/2024/02/27/0004953566_001_20240227190203563.jpg?type=w647"
+                  alt="기사 사진"
+                />
+              </a>
+              <div class="card-body">
+                <a
+                  href="https://n.news.naver.com/mnews/article/015/0004953566"
+                  style="text-decoration: none; color: black"
+                >
+                  <p class="card-text">
+                    사회에 '교권 회복' 환기한 서울 서이초 교사, 순직 인정
+                  </p>
+                </a>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-2"
+                >
+                  <small class="text-body-secondary">한국경제</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm" style="height: 350px">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c" />
+              <a href="https://n.news.naver.com/mnews/article/008/0005004806">
+                <img
+                  class="img-fluid"
+                  style="height: 200px; display: block; margin: auto"
+                  src="https://imgnews.pstatic.net/image/008/2024/02/27/0005004806_001_20240227203301017.jpg?type=w647"
+                  alt="기사 사진"
+                />
+              </a>
+              <div class="card-body">
+                <a
+                  href="https://n.news.naver.com/mnews/article/008/0005004806"
+                  style="text-decoration: none; color: black"
+                >
+                  <p class="card-text">
+                    카리나♥이재욱 "열애 인정"…에스엠 주가, 7만원대로 하락
+                  </p>
+                </a>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-2"
+                >
+                  <small class="text-body-secondary">머니투데이</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm" style="height: 350px">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c" />
+              <a href="https://n.news.naver.com/mnews/article/009/0005264730">
+                <img
+                  class="img-fluid"
+                  style="height: 200px; display: block; margin: auto"
+                  src="https://imgnews.pstatic.net/image/009/2024/02/27/0005264730_001_20240227192801034.jpg?type=w647"
+                  alt="기사 사진"
+                />
+              </a>
+              <div class="card-body">
+                <a
+                  href="https://n.news.naver.com/mnews/article/009/0005264730"
+                  style="text-decoration: none; color: black"
+                >
+                  <p class="card-text">
+                    “네이버 하이퍼클로바X, 한국판 AI능력 평가서 오픈AI·구글
+                    제쳐”
+                  </p>
+                </a>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-2"
+                >
+                  <small class="text-body-secondary">매일경제</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm" style="height: 350px">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c" />
+              <a href="https://n.news.naver.com/mnews/article/016/0002272756">
+                <img
+                  class="img-fluid"
+                  style="height: 200px; display: block; margin: auto"
+                  src="https://imgnews.pstatic.net/image/016/2024/02/27/20240227050801_0_20240227210701279.jpg?type=w647"
+                  alt="기사 사진"
+                />
+              </a>
+              <div class="card-body">
+                <a
+                  href="https://n.news.naver.com/mnews/article/016/0002272756"
+                  style="text-decoration: none; color: black"
+                >
+                  <p class="card-text">
+                    아침엔 쌀쌀, 낮엔 포근…수요일 일교차 10~15도로 커
+                  </p>
+                </a>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-2"
+                >
+                  <small class="text-body-secondary">헤럴드경제</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm" style="height: 350px">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c" />
+              <a href="https://n.news.naver.com/mnews/article/028/0002678654">
+                <img
+                  class="img-fluid"
+                  style="height: 200px; display: block; margin: auto"
+                  src="https://imgnews.pstatic.net/image/028/2024/02/27/0002678654_001_20240227201301061.jpg?type=w647"
+                  alt="기사 사진"
+                />
+              </a>
+              <div class="card-body">
+                <a
+                  href="https://n.news.naver.com/mnews/article/028/0002678654"
+                  style="text-decoration: none; color: black"
+                >
+                  <p class="card-text">
+                    대기업 월 591만원-중소기업 286만원…임금 늘어도 격차 여전
+                  </p>
+                </a>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-2"
+                >
+                  <small class="text-body-secondary">한겨레</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm" style="height: 350px">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c" />
+              <a href="https://n.news.naver.com/mnews/article/421/0007378640">
+                <img
+                  class="img-fluid"
+                  style="height: 200px; display: block; margin: auto"
+                  src="https://imgnews.pstatic.net/image/421/2024/02/27/0007378640_001_20240227192807427.jpg?type=w647"
+                  alt="기사 사진"
+                />
+              </a>
+              <div class="card-body">
+                <a
+                  href="https://n.news.naver.com/mnews/article/421/0007378640"
+                  style="text-decoration: none; color: black"
+                >
+                  <p class="card-text">
+                    윤 대통령, 늘봄학교 시행 6% 서울 조희연 교육감 공개 비판
+                  </p>
+                </a>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-2"
+                >
+                  <small class="text-body-secondary">news1</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm" style="height: 350px">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c" />
+              <a
+                href="https://sports.news.naver.com/news?oid=076&aid=0004114844"
+              >
+                <img
+                  class="img-fluid"
+                  style="height: 200px; display: block; margin: auto"
+                  src="https://imgnews.pstatic.net/image/009/2024/02/27/0005264718_001_20240227182001028.jpg?type=w647"
+                  alt="기사 사진"
+                />
+              </a>
+              <div class="card-body">
+                <a
+                  href="https://sports.news.naver.com/news?oid=076&aid=0004114844"
+                  style="text-decoration: none; color: black"
+                >
+                  <p class="card-text">
+                    “뭘로 검색하나요?” 네이버 1위 속 구글링 대신 유튜브
+                    2위·챗GPT 8위 (종합)
+                  </p>
+                </a>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-2"
+                >
+                  <small class="text-body-secondary">매일경제</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm" style="height: 350px">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c" />
+              <a
+                href="https://sports.news.naver.com/news?oid=108&aid=0003217526"
+              >
+                <img
+                  class="img-fluid"
+                  style="height: 200px; display: block; margin: auto"
+                  src="https://imgnews.pstatic.net/image/108/2024/02/27/0003217526_001_20240227222301197.jpg?type=w647"
+                  alt="기사 사진"
+                />
+              </a>
+              <div class="card-body">
+                <a
+                  href="https://sports.news.naver.com/news?oid=108&aid=0003217526"
+                  style="text-decoration: none; color: black"
+                >
+                  <p class="card-text">
+                    이정후도 RYU처럼 금의환향 꿈꾸나? 그의 답변은 '상남자' 그
+                    자체였다 [스코츠데일 현장]
+                  </p>
+                </a>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-2"
+                >
+                  <small class="text-body-secondary">스타뉴스</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm" style="height: 350px">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c" />
+              <a
+                href="https://sports.news.naver.com/news?oid=076&aid=0004114844"
+              >
+                <img
+                  class="img-fluid"
+                  style="height: 200px; display: block; margin: auto"
+                  src="https://imgnews.pstatic.net/image/076/2024/02/27/2024022801001927200260911_20240227203405930.jpg?type=w647"
+                  alt="기사 사진"
+                />
+              </a>
+              <div class="card-body">
+                <a
+                  href="https://sports.news.naver.com/news?oid=076&aid=0004114844"
+                  style="text-decoration: none; color: black"
+                >
+                  <p class="card-text">
+                    오타니, 99마일 강속구 받아칠 수 있을까? LAD 데뷔전에 쏠린
+                    시선들...28일 시카고W전 2~3타석 소화
+                  </p>
+                </a>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-2"
+                >
+                  <small class="text-body-secondary">스포츠조선</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm" style="height: 350px">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c" />
+              <a
+                href="https://sports.news.naver.com/news?oid=109&aid=0005025616"
+              >
+                <img
+                  class="img-fluid"
+                  style="height: 200px; display: block; margin: auto"
+                  src="https://imgnews.pstatic.net/image/109/2024/02/27/0005025616_001_20240227160405291.jpg?type=w647"
+                  alt="기사 사진"
+                />
+              </a>
+              <div class="card-body">
+                <a
+                  href="https://sports.news.naver.com/news?oid=109&aid=0005025616"
+                  style="text-decoration: none; color: black"
+                >
+                  <p class="card-text">
+                    한국에 남을 걸 그랬나, ML 높은 벽 실감한 뷰캐넌 "겸손해졌다,
+                    후회되는 것 중 하나가…”
+                  </p>
+                </a>
+                <div
+                  class="d-flex justify-content-between align-items-center mt-2"
+                >
+                  <small class="text-body-secondary">OSEN</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 카카오톡 채널 이동 버튼 -->
+    <div class="position-fixed bottom-0 end-0 p-3">
+      <a a href="https://pf.kakao.com/_ZxlSaG">
+        <button id="exampleModalButton" type="button" class="btn">
+          <img
+            src="https://zootopic-s3.s3.ap-northeast-2.amazonaws.com/kakaotalk_channel.png"
+            style="border-radius: 20%; height: 40px; width: 40px"
+          />
+        </button>
+      </a>
+    </div>
+
+    <!--FOTTER-->
+    <div class="bg-white py-5">
+      <footer class="container">
+        <div class="text-center" style="line-height: 2.5">
+          (주)주토픽 / 책임자 : zooTOPIC / 담당자 메일주소 : zoo@topic.com<br />
+          서울특별시 도봉구 창동 1-28 씨드큐브 7층<br />
+          근무시간이 일정하지 않아 전화대신 카카오톡 채널 문의를 이용해주세요!
+        </div>
+        <hr class="p-1" />
+        <div class="text-center text-body-secondary">
+          &copy; 2024 Company, ZOOTOPIC
+        </div>
+      </footer>
+    </div>
+
+    <!-- 부트스트랩 자바스크립트 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
